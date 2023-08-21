@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { CategoryColumn, columns } from './columns'
 import { DataTable } from '@/components/ui/data-table'
-import ApiList from '@/components/ui/api-list'
+import { ApiList } from '@/components/ui/api-list'
 
 interface CategoryProps {
   data: CategoryColumn[]
@@ -40,7 +40,7 @@ const CategoryClient:React.FC<CategoryProps> = ({data}) => {
       title='API'
       description='API calls for Categories'
       />
-      <ApiList entityName='categories' entiyIdName='categorydId' />
+      <ApiList entityName='categories' entityIdName='categorydId' />
     </>
   )
 }

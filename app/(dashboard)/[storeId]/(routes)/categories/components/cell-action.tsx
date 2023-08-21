@@ -6,7 +6,7 @@ import { useState } from "react";
 import axios from "axios";
 
 import { Button } from "@/components/ui/button";
-import { BillboardColumn } from "./columns"
+import { CategoryColumn } from "./columns";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,7 +17,7 @@ import {
 import AlertModal from "@/components/modals/alert-modal";
 
 interface CellActionProps {
-  data: BillboardColumn;
+  data: CategoryColumn;
 }
 
 
@@ -69,7 +69,7 @@ const CellAction: React.FC<CellActionProps> = ({ data }) => {
             <Copy className="mr-2 h-4 w-4" />
             Copy Id
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={()=>router.push(`/${params.storeId}/billboards/${data.id}`)} >
+          <DropdownMenuItem onClick={()=>router.push(`/${params.storeId}/categories/${data.id}`)} >
             <Edit className="mr-2 h-4 w-4" 
            />
             Update

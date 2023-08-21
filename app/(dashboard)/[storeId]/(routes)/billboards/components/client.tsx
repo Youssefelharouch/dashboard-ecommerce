@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { BillboardColumn, columns } from './columns'
 import { DataTable } from '@/components/ui/data-table'
-import ApiList from '@/components/ui/api-list'
+import { ApiList } from '@/components/ui/api-list'
 
 interface BuildboardClientProps {
   data: BillboardColumn[]
@@ -40,7 +40,7 @@ const BuildboardClient:React.FC<BuildboardClientProps> = ({data}) => {
       title='API'
       description='API calls for Billboards'
       />
-      <ApiList entityName='billboards' entiyIdName='billboardId' />
+      <ApiList entityName='billboards' entityIdName='billboardId' />
     </>
   )
 }
